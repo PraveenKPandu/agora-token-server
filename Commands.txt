@@ -1,0 +1,6 @@
+sudo /opt/bitnami/letsencrypt/lego --tls --email="praveenkpandu@gmail.com" --domains="praveen.uk" --domains="www.praveen.uk" --domains="www.agora.praveen.uk" --domains="agora.praveen.uk" --path="/opt/bitnami/letsencrypt" run
+
+sudo ln -sf /opt/bitnami/letsencrypt/certificates/praveen.uk.key /opt/bitnami/apache2/conf/bitnami/certs/server.key
+sudo ln -sf /opt/bitnami/letsencrypt/certificates/praveen.uk.crt /opt/bitnami/apache2/conf/bitnami/certs/server.crt
+sudo chown root:root /opt/bitnami/apache2/conf/bitnami/certs/server*
+sudo chmod 600 /opt/bitnami/apache2/conf/bitnami/certs/server*

@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {},
+	"launch": {
+		"configurations": [
+			{
+				"type": "aws-sam",
+				"request": "direct-invoke",
+				"name": "serverlessrepo-Agora-Friends-httpsrequest-vIWKwt4zMCSK:index.handler (nodejs12.x)",
+				"invokeTarget": {
+					"target": "code",
+					"projectRoot": "/Users/praveenkumar/Documents/VideoCall/serverless/serverlessrepo-Agora-Friends-httpsrequest-vIWKwt4zMCSK",
+					"lambdaHandler": "index.handler"
+				},
+				"lambda": {
+					"runtime": "nodejs12.x",
+					"payload": {},
+					"environmentVariables": {}
+				}
+			}
+		]
+	}
+}
